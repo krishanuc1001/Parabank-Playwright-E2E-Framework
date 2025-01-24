@@ -1,4 +1,4 @@
-# Playwright TypeScript Framework
+# Parabank E2E Playwright Framework
 
 This is a Javascript-based testing framework using Playwright to automate the Parabank website. The framework is set up to facilitate end-to-end testing for Web and API.
 
@@ -76,10 +76,21 @@ To auto generate tests with Codegen:
 npx playwright codegen
 ```
 
+## Test Framework Setup using Page Object Model
+The framework uses the Page Object Model (POM) design pattern to enhance test maintenance and reduce code duplication. Below is an overview of how the framework is set up:  
+
+
+### Project Structure
+- pages/: Contains the page object classes.
+- tests/: Contains the test files.
+- helpers/: Contains helper classes and utility functions.
+
+### Page Object Model
+Each page of the application is represented by a class. These classes contain methods to interact with the page elements.
 
 ## Writing Tests
 
-The tests are written in TypeScript and are located in the `tests/` directory. The test files have the `.spec.ts` extension.
+The tests are written in Javascript and are located in the `tests/` directory. The test files have the `.spec.ts` extension.
 
 ## Configuration
 
