@@ -16,7 +16,7 @@ test.beforeAll(async ({browser}) => {
     await basePage.navigateTo();
 });
 
-test.only('E2E scenario - UI', async ({browser}) => {
+test('E2E scenario - UI and API', async ({browser}) => {
     const registrationPage = new RegistrationPage(page);
     const loginPage = new LoginPage(page);
     const accountServicesPage = new AccountServicesPage(page);
