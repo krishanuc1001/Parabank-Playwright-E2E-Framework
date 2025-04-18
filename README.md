@@ -32,6 +32,13 @@ npm install
 npm init playwright
 ```
 
+Run the following command to download new browsers:
+
+```zsh
+npx playwright install
+```
+
+
 ## Running Tests
 
 To run the tests, execute the following command:
